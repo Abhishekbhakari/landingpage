@@ -1,5 +1,4 @@
 <?php
-// submit.php
 include 'includes/db_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,7 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$first_name', '$last_name', '$business_email', '$phone_number', '$company_name', '$job_title', '$company_size', '$industry', '$functional_area', '$state', '$zip', '$country', '$agree')";
 
     if ($conn->query($sql) === TRUE) {
-        // Output HTML with JavaScript to trigger the download
         echo "<!DOCTYPE html>
         <html lang='en'>
         <head>
